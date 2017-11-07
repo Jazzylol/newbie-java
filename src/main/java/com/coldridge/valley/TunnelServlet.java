@@ -23,9 +23,9 @@ public class TunnelServlet extends HttpServlet {
         StringBuffer buffer = new StringBuffer();
         buffer.append("<table>");
         for (File file : files) {
-            buffer.append("<tr>");
+            buffer.append("<tr><td>");
             buffer.append("<a href='../doc/" + file.getName() + "' target='_blank'> " + file.getName() + "</a></td>");
-            buffer.append("</tr><br>");
+            buffer.append("</tr>");
         }
         buffer.append("</table");
         req.getSession().setAttribute("table", buffer.toString());
