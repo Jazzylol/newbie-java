@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>Java学习路线图+part+one+.md</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:  #ffffff; --text-color:  #333333; --code-block-bg-color: inherit; }
-html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+<title>Java学习路线图 part one .md</title><link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:  #ffffff; --text-color:  #333333; --code-block-bg-color: inherit; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { background-color: rgb(181, 214, 252); text-shadow: none; background-position: initial initial; background-repeat: initial initial; }
@@ -19,7 +19,7 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 #write > p:first-child, #write > ul:first-child, #write > ol:first-child, #write > pre:first-child, #write > blockquote:first-child, #write > div:first-child, #write > table:first-child { margin-top: 30px; }
 #write li > table:first-child { margin-top: -20px; }
 img { max-width: 100%; vertical-align: middle; }
-input, button, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; line-height: inherit; }
+input, button, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 ::before, ::after, * { box-sizing: border-box; }
 #write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre { width: inherit; }
@@ -111,7 +111,7 @@ p + .mathjax-block { margin-top: -1.143rem; }
 a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
 .footnote-line a:not(.reversefootnote) { color: inherit; }
 .md-attr { display: none; }
-.md-fn-count::after { content: '.'; }
+.md-fn-count::after { content: "."; }
 .md-tag { opacity: 0.5; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: monospace; }
 code { text-align: left; }
@@ -128,1174 +128,415 @@ a.md-print-anchor { border: none !important; display: inline-block !important; p
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
 
 
-/* Flowchart variables */
-/* Sequence Diagram variables */
-/* Gantt chart variables */
-.mermaid .label {
-  color: #323D47;
-}
-.node rect,
-.node circle,
-.node ellipse,
-.node polygon {
-  fill: #BDD5EA;
-  stroke: #81B1DB;
-  stroke-width: 1px;
-}
-.edgePath .path {
-  stroke: lightgrey;
-}
-.edgeLabel {
-  background-color: #e8e8e8;
-}
-.cluster rect {
-  fill: #6D6D65 !important;
-  rx: 4 !important;
-  stroke: rgba(255, 255, 255, 0.25) !important;
-  stroke-width: 1px !important;
-}
-.cluster text {
-  fill: #F9FFFE;
-}
-.actor {
-  stroke: #81B1DB;
-  fill: #BDD5EA;
-}
-text.actor {
-  fill: black;
-  stroke: none;
-}
-.actor-line {
-  stroke: lightgrey;
-}
-.messageLine0 {
-  stroke-width: 1.5;
-  stroke-dasharray: "2 2";
-  marker-end: "url(file:///Users/eye/Library/Application%20Support/abnerworks.Typora/themes/night/#arrowhead)";
-  stroke: lightgrey;
-}
-.messageLine1 {
-  stroke-width: 1.5;
-  stroke-dasharray: "2 2";
-  stroke: lightgrey;
-}
-#arrowhead {
-  fill: lightgrey !important;
-}
-#crosshead path {
-  fill: lightgrey !important;
-  stroke: lightgrey !important;
-}
-.messageText {
-  fill: lightgrey;
-  stroke: none;
-}
-.labelBox {
-  stroke: #81B1DB;
-  fill: #BDD5EA;
-}
-.labelText {
-  fill: #323D47;
-  stroke: none;
-}
-.loopText {
-  fill: lightgrey;
-  stroke: none;
-}
-.loopLine {
-  stroke-width: 2;
-  stroke-dasharray: "2 2";
-  marker-end: "url(file:///Users/eye/Library/Application%20Support/abnerworks.Typora/themes/night/#arrowhead)";
-  stroke: #81B1DB;
-}
-.note {
-  stroke: rgba(255, 255, 255, 0.25);
-  fill: #fff5ad;
-}
-.noteText {
-  fill: black;
-  stroke: none;
-  font-family: 'trebuchet ms', verdana, arial;
-  font-size: 14px;
-}
-/** Section styling */
-.section {
-  stroke: none;
-  opacity: 0.2;
-}
-.section0 {
-  fill: rgba(255, 255, 255, 0.3);
-}
-.section2 {
-  fill: #EAE8B9;
-}
-.section1,
-.section3 {
-  fill: white;
-  opacity: 0.2;
-}
-.sectionTitle0 {
-  fill: #F9FFFE;
-}
-.sectionTitle1 {
-  fill: #F9FFFE;
-}
-.sectionTitle2 {
-  fill: #F9FFFE;
-}
-.sectionTitle3 {
-  fill: #F9FFFE;
-}
-.sectionTitle {
-  text-anchor: start;
-  font-size: 11px;
-  text-height: 14px;
-}
-/* Grid and axis */
-.grid .tick {
-  stroke: rgba(255, 255, 255, 0.3);
-  opacity: 0.3;
-  shape-rendering: crispEdges;
-}
-.grid .tick text {
-  fill: lightgrey;
-  opacity: 0.5;
-}
-.grid path {
-  stroke-width: 0;
-}
-/* Today line */
-.today {
-  fill: none;
-  stroke: #DB5757;
-  stroke-width: 2px;
-}
-/* Task styling */
-/* Default task */
-.task {
-  stroke-width: 1;
-}
-.taskText {
-  text-anchor: middle;
-  font-size: 11px;
-}
-.taskTextOutsideRight {
-  fill: #323D47;
-  text-anchor: start;
-  font-size: 11px;
-}
-.taskTextOutsideLeft {
-  fill: #323D47;
-  text-anchor: end;
-  font-size: 11px;
-}
-/* Specific task settings for the sections*/
-.taskText0,
-.taskText1,
-.taskText2,
-.taskText3 {
-  fill: #323D47;
-}
-.task0,
-.task1,
-.task2,
-.task3 {
-  fill: #BDD5EA;
-  stroke: rgba(255, 255, 255, 0.5);
-}
-.taskTextOutside0,
-.taskTextOutside2 {
-  fill: lightgrey;
-}
-.taskTextOutside1,
-.taskTextOutside3 {
-  fill: lightgrey;
-}
-/* Active task */
-.active0,
-.active1,
-.active2,
-.active3 {
-  fill: #81B1DB;
-  stroke: rgba(255, 255, 255, 0.5);
-}
-.activeText0,
-.activeText1,
-.activeText2,
-.activeText3 {
-  fill: #323D47 !important;
-}
-/* Completed task */
-.done0,
-.done1,
-.done2,
-.done3 {
-  fill: lightgrey;
-}
-.doneText0,
-.doneText1,
-.doneText2,
-.doneText3 {
-  fill: #323D47 !important;
-}
-/* Tasks on the critical line */
-.crit0,
-.crit1,
-.crit2,
-.crit3 {
-  stroke: #E83737;
-  fill: #E83737;
-  stroke-width: 2;
-}
-.activeCrit0,
-.activeCrit1,
-.activeCrit2,
-.activeCrit3 {
-  stroke: #E83737;
-  fill: #81B1DB;
-  stroke-width: 2;
-}
-.doneCrit0,
-.doneCrit1,
-.doneCrit2,
-.doneCrit3 {
-  stroke: #E83737;
-  fill: lightgrey;
-  stroke-width: 1;
-  cursor: pointer;
-  shape-rendering: crispEdges;
-}
-.doneCritText0,
-.doneCritText1,
-.doneCritText2,
-.doneCritText3 {
-  fill: lightgrey !important;
-}
-.activeCritText0,
-.activeCritText1,
-.activeCritText2,
-.activeCritText3 {
-  fill: #323D47 !important;
-}
-.titleText {
-  text-anchor: middle;
-  font-size: 18px;
-  fill: lightgrey;
-}
-/*
-
-
-*/
-.node text {
-  font-family: 'trebuchet ms', verdana, arial;
-  font-size: 14px;
-}
-div.mermaidTooltip {
-  position: absolute;
-  text-align: center;
-  max-width: 200px;
-  padding: 2px;
-  font-family: 'trebuchet ms', verdana, arial;
-  font-size: 12px;
-  background: #6D6D65;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 2px;
-  pointer-events: none;
-  z-index: 100;
-}
-@import "";
-@import "night/codeblock.dark.css";
-@import "night/sourcemode.dark.css";
-
 :root {
-    --bg-color:  #363B40;
-    --side-bar-bg-color: #2E3033;
-    --text-color: #b8bfc6;
-    --code-block-bg-color: inherit;//#f8f8f8;
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
 
-    --item-hover-bg-color: #0a0d16;
-    --control-text-color: #b7b7b7;
-    --control-text-hover-color: #eee;
-    --window-border: 1px dashed #9b9b9b;
+@include-when-export url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
 
-    --active-file-bg-color: rgb(34, 34, 34);
-    --active-file-border-color: #8d8df0;
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans Regular'),url('file:///Users/Jazz/Library/Application%20Support/abnerworks.Typora/themes/github/400.woff') format('woff')
+}
 
-    --primary-color: #a3d5fe;
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Open Sans Italic'),url('file:///Users/Jazz/Library/Application%20Support/abnerworks.Typora/themes/github/400i.woff') format('woff')
+}
 
-    --active-file-text-color: white;
-    --item-hover-bg-color: #70717d;
-    --item-hover-text-color: white;
-    --primary-color: #6dc1e7;
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Open Sans Bold'),url('file:///Users/Jazz/Library/Application%20Support/abnerworks.Typora/themes/github/700.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Open Sans Bold Italic'),url('file:///Users/Jazz/Library/Application%20Support/abnerworks.Typora/themes/github/700i.woff') format('woff')
 }
 
 html {
     font-size: 16px;
 }
 
-html,
 body {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    background: #363B40;
-    background: var(--bg-color);
-    fill: currentColor;
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
 }
 
-#write {
-    max-width: 914px;
-    padding-top: 20px;
+#write{
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 20px 30px 40px 30px;
+	padding-top: 20px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
 }
 
-html,
-body,
-button,
-input,
-select,
-textarea,
-div.code-tooltip-content {
-    color: #b8bfc6;
+body > *:first-child {
+    margin-top: 0 !important;
 }
-
-div.code-tooltip,
-.md-hover-tip .md-arrow:after {
-    background: #4B535A;
+body > *:last-child {
+    margin-bottom: 0 !important;
 }
-
-.popover.bottom > .arrow:after {
-    border-bottom-color: #4B535A;
+a {
+    color: #4183C4;
 }
-
-html,
-body,
-button,
-input,
-select,
-textarea {
-    font-style: normal;
-    line-height: 1.625rem;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-hr {
-    height: 2px;
-    border: 0;
-    margin: 50px 0 !important;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Lucida Grande", "Corbal", Georgia, sans-serif;
-    font-weight: normal;
-    clear: both;
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    /*background: url("file:///Users/Jazz/Library/Application%20Support/images/modules/styleguide/para.png") no-repeat 10px center;*/
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 4px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+    border-bottom: 1px solid #ddd;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dddddd;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #cccccc;
     margin: 0;
     padding: 0;
-    color: #DEDEDE
 }
-
-h1 {
-    font-size: 2.5rem;
-    /* 36px */
-    line-height: 2.75rem;
-    /* 40px */
-    margin-bottom: 1.5rem;
-    /* 24px */
-    letter-spacing: -1.5px;
+table tr:nth-child(2n) {
+    background-color: #f8f8f8;
 }
-
-h2 {
-    font-size: 1.63rem;
-    /* 24px */
-    line-height: 1.875rem;
-    /* 30px */
-    margin-bottom: 1.5rem;
-    /* 24px */
-    letter-spacing: -1px;
+table tr th {
     font-weight: bold;
-}
-
-h3 {
-    font-size: 1.17rem;
-    /* 18px */
-    line-height: 1.5rem;
-    /* 24px */
-    margin-bottom: 1.5rem;
-    /* 24px */
-    letter-spacing: -1px;
-    font-weight: bold;
-}
-
-h4 {
-    font-size: 1.12rem;
-    /* 16px */
-    line-height: 1.375rem;
-    /* 22px */
-    margin-bottom: 1.5rem;
-    /* 24px */
-    color: white;
-}
-
-h5 {
-    font-size: 0.97rem;
-    /* 16px */
-    line-height: 1.25rem;
-    /* 22px */
-    margin-bottom: 1.5rem;
-    /* 24px */
-    font-weight: bold;
-}
-
-h6 {
-    font-size: 0.93rem;
-    /* 16px */
-    line-height: 1rem;
-    /* 16px */
-    margin-bottom: 0.75rem;
-    color: white;
-}
-
-@media (min-width: 980px) {
-    h3.md-focus:before,
-    h4.md-focus:before,
-    h5.md-focus:before,
-    h6.md-focus:before {
-        color: #ddd;
-        border: 1px solid #ddd;
-        border-radius: 3px;
-        position: absolute;
-        left: -1.642857143rem;
-        top: .357142857rem;
-        float: left;
-        font-size: 9px;
-        padding-left: 2px;
-        padding-right: 2px;
-        vertical-align: bottom;
-        font-weight: normal;
-        line-height: normal;
-    }
-
-    h3.md-focus:before {
-        content: 'h3';
-    }
-
-    h4.md-focus:before {
-        content: 'h4';
-    }
-
-    h5.md-focus:before {
-        content: 'h5';
-        top: 0px;
-    }
-
-    h6.md-focus:before {
-        content: 'h6';
-        top: 0px;
-    }
-}
-
-a {
-    text-decoration: none;
-    outline: 0;
-}
-
-a:hover {
-    outline: 0;
-}
-
-a:focus {
-    outline: thin dotted;
-}
-
-sup.md-footnote {
-    background-color: #555;
-    color: #ddd;
-}
-
-p {
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
-}
-
-p,
-ul,
-dd,
-ol,
-hr,
-address,
-pre,
-table,
-iframe,
-.wp-caption,
-.wp-audio-shortcode,
-.wp-video-shortcode {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    /* 24px */
-}
-
-audio:not([controls]) {
-    display: none;
-}
-
-[hidden] {
-    display: none;
-}
-
-::-moz-selection {
-    background: #4a89dc;
-    color: #fff;
-    text-shadow: none;
-}
-
-*.in-text-selection,
-::selection {
-    background: #4a89dc;
-    color: #fff;
-    text-shadow: none;
-}
-
-ul,
-ol {
-    padding: 0 0 0 1.875rem;
-    /* 30px */
-}
-
-ul {
-    list-style: square;
-}
-
-ol {
-    list-style: decimal;
-}
-
-ul ul,
-ol ol,
-ul ol,
-ol ul {
+    border: 1px solid #cccccc;
+    text-align: left;
     margin: 0;
+    padding: 6px 13px;
 }
-
-b,
-th,
-dt,
-strong {
-    font-weight: bold;
+table tr td {
+    border: 1px solid #cccccc;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
 }
-
-i,
-em,
-dfn,
-cite {
-    font-style: italic;
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
 }
-
-blockquote {
-    padding-left: 1.875rem;
-    margin: 0 0 1.875rem 1.875rem;
-    border-left: solid 2px #474d54;
-    padding-left: 30px;
-    margin-top: 35px;
-}
-
-pre,
-code,
-kbd,
-tt,
-var {
-    background: rgba(0, 0, 0, 0.05);
-    font-size: 0.875rem;
-    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-}
-
-pre.md-fences {
-    padding: 10px 30px;
-    margin-bottom: 20px;
-    border: 1px solid;
-}
-
-.md-fences .code-tooltip {
-    bottom: -3.2em;
-}
-
-code,
-kbd,
-tt,
-var {
-    padding: 2px 5px;
-}
-
-table {
-    max-width: 100%;
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-th,
-td {
-    padding: 5px 10px;
-    vertical-align: top;
-}
-
-a {
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-hr {
-    background: #474d54;
-    /* variable */
-}
-
-#write>*:first-child {
-    margin-top: 40px;
-}
-
-h1 {
-    margin-top: 2em;
-}
-
-a {
-    color: #e0e0e0;
-    text-decoration: underline;
-}
-
-a:hover {
-    color: #fff;
-}
-
-.md-inline-math script {
-    color: #81b1db;
-}
-
-b,
-th,
-dt,
-strong {
-    color: #DEDEDE;
-    /* variable */
-}
-
-mark {
-    background: #D3D40E;
-}
-
-blockquote {
-    color: #9DA2A6;
-}
-
-table a {
-    color: #DEDEDE;
-    /* variable */
-}
-
-th,
-td {
-    border: solid 1px #474d54;
-    /* variable */
-}
-
-.task-list {
-    padding-left: 0;
-}
-
-.task-list-item {
-    padding-left: 1.25rem;
-}
-
-.task-list-item input {
-    top: 0.1875rem;
-}
-
-.task-list-item input:before {
-    content: "";
-    display: inline-block;
-    width: 0.875rem;
-    height: 0.875rem;
-    vertical-align: middle;
-    text-align: center;
-    border: 1px solid #b8bfc6;
-    background-color: #363B40;
-    margin-top: -0.4375rem;
-}
-
-.task-list-item input:checked:before,
-.task-list-item input[checked]:before {
-    content: '\221A';
-    /*◘*/
-    font-size: 0.625rem;
-    line-height: 0.625rem;
-    color: #DEDEDE;
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
 }
 
 .CodeMirror-gutters {
-    background: transparent;
-    border-right: 1px solid transparent;
+    border-right: 1px solid #ddd;
 }
 
-/** quick open **/
-.auto-suggest-container {
-    border: 0px;
-    background-color: #525C65;
+.md-fences,
+code,
+tt {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
 }
 
-#typora-quick-open {
-    background-color: #525C65;
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 0.2em 1em;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+.task-list{
+	padding-left: 0;
 }
 
-#typora-quick-open input{
-    background-color: #525C65;
+.task-list-item {
+	padding-left:32px;
+}
+
+.task-list-item input {
+  top: 3px;
+  left: 8px;
+}
+
+@media screen and (min-width: 914px) {
+    /*body {
+        width: 854px;
+        margin: 0 auto;
+    }*/
+}
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
     border: 0;
-    border-bottom: 1px solid grey;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
 }
 
-.typora-quick-open-item {
-    background-color: inherit;
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
     color: inherit;
 }
 
-.typora-quick-open-item.active {
-    background-color: #4D8BDB;
-    color: white;
+.md-tag{
+	color: inherit;
 }
 
-.typora-search-spinner > div {
-  background-color: #fff;
-}
-
-#write pre.md-meta-block {
-    border-bottom: 1px dashed #ccc;
-    background: transparent;
-    padding-bottom: 0.6em;
-    line-height: 1.6em;
-}
-
-.btn,
-.btn .btn-default {
-    background: transparent;
-    color: #b8bfc6;
-}
-
-.md-table-edit {
-    border-top: 1px solid gray;
-    background-color: #363B40;
-}
-
-.popover-title {
-    background: transparent;
-}
-
-.md-image>.md-meta {
-    color: #BBBBBB;
-    background: transparent;
-}
-
-.md-expand.md-image>.md-meta {
-    color: #DDD;
-}
-
-#write>h3:before,
-#write>h4:before,
-#write>h5:before,
-#write>h6:before {
-    border: none;
-    border-radius: 0px;
-    color: #888;
-    text-decoration: underline;
-    left: -1.4rem;
-    top: 0.2rem;
-}
-
-#write>h3.md-focus:before {
-    top: 2px;
-}
-
-#write>h4.md-focus:before {
-    top: 2px;
-}
-
-.md-toc-item {
-    color: #A8C2DC;
-}
-
-#write div.md-toc-tooltip {
-    background-color: #363B40;
-}
-
-.dropdown-menu .btn:hover,
-.dropdown-menu .btn:focus,
-.md-toc .btn:hover,
-.md-toc .btn:focus {
-    color: white;
-    background: black;
-}
-
-#toc-dropmenu {
-    background: rgba(50, 54, 59, 0.93);
-    border: 1px solid rgba(253, 253, 253, 0.15);
-}
-
-#toc-dropmenu .divider {
-    background-color: #9b9b9b;
-}
-
-.outline-expander:before {
-    top: 2px;
-}
-
-#typora-sidebar {
-    box-shadow: none;
-    border-right: 1px dashed;
-    border-right: none;
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
 }
 
 .sidebar-tabs {
-    border-bottom:0;
+    border-bottom: none;
 }
 
-#typora-sidebar:hover .outline-title-wrapper {
-    border-left: 1px dashed;
-}
-
-.outline-title-wrapper .btn {
-    color: inherit;
-}
-
-.outline-item:hover {
-    border-color: #363B40;
-    background-color: #363B40;
-    color: white;
-}
-
-h1.md-focus .md-attr,
-h2.md-focus .md-attr,
-h3.md-focus .md-attr,
-h4.md-focus .md-attr,
-h5.md-focus .md-attr,
-h6.md-focus .md-attr,
-.md-header-span .md-attr {
-    color: #8C8E92;
-    display: inline;
-}
-
-.md-comment {
-    color: #5a95e3;
-    opacity: 1;
-}
-
-.md-inline-math g,
-.md-inline-math svg {
-    stroke: #b8bfc6 !important;
-    fill: #b8bfc6 !important;
-}
-
-[md-inline='inline_math'] {
-    color: #9CB2E9;
-}
-
-#math-inline-preview .md-arrow:after {
-    background: black;
-}
-
-.modal-content {
-    background: var(--bg-color);
-    border: 0;
-}
-
-.modal-title {
-    font-size: 1.5em;
-}
-
-.modal-content input {
-    background-color: rgba(26, 21, 21, 0.51);
-    color: white;
-}
-
-.modal-content .input-group-addon {
-    background-color: rgba(0, 0, 0, 0.17);
-    color: white;
-}
-
-.modal-backdrop {
-    background-color: rgba(174, 174, 174, 0.7);
-}
-
-.modal-content .btn-primary {
-    border-color: var(--primary-color);
-}
-
-.md-table-resize-popover {
-    background-color: #4B535A;
-}
-
-.form-inline .input-group .input-group-addon {
-    color: white;
-}
-
-#md-searchpanel {
-    border-bottom: 1px dashed grey;
-}
-
-/** UI for electron */
-
-.context-menu {
-    background-color: #42464A;
-}
-
-.context-menu.dropdown-menu .divider {
-    background-color: #777777;
-}
-
-footer {
-    color: inherit;
-}
-
-@media (max-width: 1000px) {
-    footer {
-        border-top: none;
-    }
-    footer:hover {
-        color: inherit;
-    }
-}
-
-#file-info-file-path .file-info-field-value:hover {
-    background-color: #555;
-    color: #dedede;
-}
-
-.megamenu-content,
-.megamenu-opened header {
-    background: var(--bg-color);
-}
-
-.megamenu-menu-panel h2,
-.megamenu-menu-panel h1,
-.long-btn {
-    color: inherit;
-}
-
-.megamenu-menu-panel input[type='text'] {
-    background: inherit;
-    border: 0;
-    border-bottom: 1px solid;
-}
-
-#recent-file-panel-action-btn {
-    background: inherit;
-    border: 1px grey solid;
-}
-
-.megamenu-menu-panel .btn:hover, 
-.megamenu-menu-panel .btn:focus, 
-.megamenu-menu-panel .btn.focus {
-    color: white;
-}
-
-.megamenu-menu-panel .dropdown-menu > li > a {
-    color: inherit;
-    background-color: #2F353A;
-    text-decoration: none;
-}
-
-.megamenu-menu-panel table td:nth-child(1) {
-    color: inherit;
-    font-weight: bold;
-}
-
-.megamenu-menu-panel tbody tr:hover td:nth-child(1) {
-    color: white;
-}
-
-.modal-footer .btn-default, 
-.modal-footer .btn-primary,
-.modal-footer .btn-default:not(:hover) {
-    border: 1px solid;
-    border-color: transparent;
-}
-
-.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
-    color: white;
+#typora-quick-open {
     border: 1px solid #ddd;
-    background-color: inherit;
+    background-color: #f8f8f8;
 }
 
-.modal-header {
-    border-bottom: 0;
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
 }
 
-.modal-footer {
-    border-top: 0;
-}
-
-#recent-file-panel tbody tr:nth-child(2n-1) {
-    background-color: transparent !important;
-}
-
-.megamenu-menu-panel tbody tr:hover td:nth-child(2) {
-    color: inherit;
-}
-
-.megamenu-menu-panel .btn {
-    border: 1px solid #eee;
-    background: transparent;
-}
-
-.mouse-hover .toolbar-icon.btn:hover,
-#w-full.mouse-hover,
-#w-pin.mouse-hover {
-    background-color: inherit;
-}
-
-.typora-node::-webkit-scrollbar {
-    width: 5px;
-}
-
-.typora-node::-webkit-scrollbar-thumb:vertical {
-    background: rgba(250, 250, 250, 0.3);
-}
-
-.typora-node::-webkit-scrollbar-thumb:vertical:active {
-    background: rgba(250, 250, 250, 0.5);
-}
-
-#w-unpin {
-    background-color: #4182c4;
-}
-
-#top-titlebar, #top-titlebar * {
-    color: var(--item-hover-text-color);
-}
-
-.typora-sourceview-on #toggle-sourceview-btn,
-#footer-word-count:hover,
-.show-word-count #footer-word-count {
-    background: #333333;
-}
-
-#toggle-sourceview-btn:hover {
-    color: #eee;
-    background: #333333;
+#md-notification:before {
+    top: 10px;
 }
 
 /** focus mode */
-.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
-    color: #686868 !important;
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
 }
 
-.on-focus-mode .md-end-block:not(.md-focus) img,
-.on-focus-mode .task-list-item:not(.md-focus-container)>input {
-    opacity: #686868 !important;
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
 }
 
-.on-focus-mode li[cid]:not(.md-focus-container){
-    color: #686868;
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
 }
 
-.on-focus-mode .md-fences.md-focus .CodeMirror-code>*:not(.CodeMirror-activeline) *,
-.on-focus-mode .CodeMirror.cm-s-inner:not(.CodeMirror-focused) * {
-    color: #686868 !important;
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
 }
 
-.on-focus-mode .md-focus,
-.on-focus-mode .md-focus-container {
-    color: #fff;
+.md-lang {
+    color: #b4654d;
 }
 
-.on-focus-mode #typora-source .CodeMirror-code>*:not(.CodeMirror-activeline) * {
-    color: #686868 !important;
-}
-
-
-/*diagrams*/
-#write .md-focus .md-diagram-panel {
-    border: 1px solid #ddd;
-    margin-left: -30px;
-}
-
-.md-diagram-panel-error {
-    color: #f1908e;
-}
-
-.active-tab-files #info-panel-tab-file,
-.active-tab-files #info-panel-tab-file:hover,
-.active-tab-outline #info-panel-tab-outline,
-.active-tab-outline #info-panel-tab-outline:hover {
-    color: #eee;
-}
-
-.sidebar-footer-item:hover,
-.footer-item:hover {
-    background: inherit;
-    color: white;
-}
-
-.ty-side-sort-btn.active,
-.ty-side-sort-btn:hover,
-.selected-folder-menu-item a:after {
-    color: white;
-}
-
-#sidebar-files-menu {
-    border:solid 1px;
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.79);
-    background-color: var(--bg-color);
-}
-
-.file-list-item {
-    border-bottom:none;
-}
-
-.file-list-item-summary {
-    opacity: 1;
-}
-
-.file-list-item.active:first-child {
-    border-top: none;
-}
-
-.sidebar-footer {
-    border-top: 1px solid #555;
-}
-
-.file-node-background {
-    height: 32px;
-}
-
-.file-library-node.active>.file-node-content,
-.file-list-item.active {
-    color: white;
-    color: var(--active-file-text-color);
-}
-
-.file-library-node.active>.file-node-background{
-    background-color: rgb(34, 34, 34);
-    background-color: var(--active-file-bg-color);
-}
-.file-list-item.active {
-    background-color: rgb(34, 34, 34);
-    background-color: var(--active-file-bg-color);
-}
-
-#ty-tooltip {
-    background-color: black;
-    color: #eee;
-}
-
-#write {
-    cursor: -webkit-image-set(url("file:///Users/eye/Library/Application%20Support/abnerworks.Typora/themes/night/cursor.png") 1x, url("file:///Users/eye/Library/Application%20Support/abnerworks.Typora/themes/night/cursor@2x.png") 2x) 8 8, auto;
-}
 
 
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-mac'><h3><a name='header-n0' class='md-header-anchor '></a>Java学习 part one</h3><p></p><h4><a name='header-n4' class='md-header-anchor '></a>java基础</h4><ol start='' ><li>java发展历史  （<a href='http://www.importnew.com/9060.html' target='_blank' >http://www.importnew.com/9060.html</a>   <a href='http://www.cnblogs.com/scwanglijun/p/3747607.html' target='_blank' >http://www.cnblogs.com/scwanglijun/p/3747607.html</a>）</li><li>JDK JRE区别</li><li>如何配置JAVA环境变量</li><li>java文件是如何运行的</li><li>java  javac命令的区别</li><li>什么是jar包，什么是war包</li></ol><h4><a name='header-n24' class='md-header-anchor '></a>java 常见的api使用（暂时别看，待完成）</h4><ol start='' ><li>jdk是官方的内置的api，一般我们大部分时间都是在使用内置的api，jdk文档1.6有中文，1.6以后就没有中文了</li><li>jdk文档地址，百度 【1.6 jdk 文档】，一般中文看不懂，可以在线看1.7或者1.8，1.9的英文在线文档。建议先下载1.6，看看如何看jdk文档，熟练了以后再看在线文档</li><li>String 类 ，字符串操作类，基本操作的api，建议所有的推荐了解的api都写demo自行测试</li></ol><h4><a name='header-n35' class='md-header-anchor '></a>java语法基础</h4><h5><a name='header-n36' class='md-header-anchor '></a>基本概念</h5><ol start='' ><li>java思想三大核心，抽象、继承、多态</li></ol><h5><a name='header-n41' class='md-header-anchor '></a>关键字</h5><ol start='' ><li>标识符，例如类的标识符是 class ，接口标识符  interface ,抽象类标识符 abstract class ,枚举标识符 enum ，静态类 static class</li><li>8种基本数据类型以及其包装类（基本数据类型和包装类的区别？？）</li><li>运算符号的区别           &amp; | ^ ! &amp;&amp; || ， 尤其在判断条件里 if(a &amp; b )和 if(a &amp;&amp; b)区别，类似的还有 if(a | b ) if(a || b)</li><li>位运算符  &lt;&lt; ，&gt;&gt;，&lt;&lt;&lt;，&gt;&gt;&gt;区别</li><li>特殊运算符 ++，  += ， —— ，-=  ，区分 i++   ++i的区别</li><li>java命名规范。驼峰式</li><li>三元运算符</li><li>数组定义的语法 ,三元数组的定义语法</li><li>Javadoc 生成java文档（了解）</li><li>do while和 while语法有什么区别</li><li>for循环的语法 foreach 和 for循环的语法区别（效果是一样的 都是遍历）</li><li>break，continue的使用  break a，continue a分别如何使用（for循环可以定义名称，使用break，continue 跳出制定的循环，默认只跳出一层循环）</li><li>重载和覆盖（复写）的区别 。 Overridge 和 overload</li><li>private关键字表示的含义（可以修饰 类，方法，变量，主要是控制 类，方法，变量的访问权限</li></ol><h5><a name='header-n85' class='md-header-anchor '></a>对象</h5><ol start='' ><li>什么叫对象，如何定义一个对象</li><li>什么是主函数(main)</li><li>什么是构造函数，默认构造函数，带参数构造函数，构造函数和一般函数的区别，构造函数的作用是什么</li><li>构造代码块和构造函数以及静态代码块写法以及区别以及执行顺序</li><li>new 对象这个动作在内存中到底做了什么，整个过程需要了解</li><li>匿名对象是什么？为什么存在匿名对象，如何定义匿名对象，如何使用匿名对象。</li><li>变量的作用范围，成员变量和局部变量的区别</li><li>jvm是什么 jvm内存结构是怎么分配的</li><li>封装的好处是什么</li><li>this关键字用法，代表的含义 </li><li>静态方法和非静态方法（成员方法）区别？是否可以相互调用？</li><li>静态变量和非静态变量区别</li><li>java常用的设计模式  单例（懒汉式，饿汉式）工厂，责任链，观察者 等等</li></ol><h5><a name='header-n126' class='md-header-anchor '></a>继承</h5><ol start='' ><li>java不支持多继承，只支持单继承，继承的关键字 extends，java支持多重继承（继承1个父类，父类再继承一个父类）</li><li>一个类继承另外一个类以后，父类的变量和方法，如何在子类中体现（跟private protect public 等关键字有关系，public和protect 的父类方法和变量，在子类中可以直接使用）</li><li>继承关系中，子父类包含相同的函数，变量的情况下，如果调用子类的变量，方法，会发生什么</li><li>继承关系中，子类调用父类方法如何调用  super.方法名</li><li>继承关系中，子父类构造函数，调用顺序是如何的。（子类的构造函数第一行全部有一个隐式的super.父类构造函数）</li><li>继承关系中 super(),this()分别什么意思</li><li>继承的好处 继承的弊端</li><li>继承的时候方法的复写，要求子父类中方法签名一模一样，方法签名包括方法名，参数列表，返回值类型，访问权限可以子类大于等于父类，在复写的时候，子类抛出的一场不可以大于父类</li><li>抽象类的特点和抽象类和一般类的区别</li><li>抽象类是否有 构造函数？抽象类是否可以继承？抽象类可以创建对象吗？什么是抽象方法，抽象类中可否没有抽象方法。</li><li>final  关键词放在 类，方法，变量上的区别</li><li>interface关键字是什么意思，用interface定义的称为 接口，接口中的方法都是空实现的，只定义方法名，不会有实现，可以理解interface是抽象类中全部是抽象方法的一种特殊抽象类。</li><li>类去实现接口 class  implements interface，实现接口的类必须实现接口中定义的所有方法。</li></ol><h5><a name='header-n167' class='md-header-anchor '></a>多态</h5><ol start='' ><li><p>多态是什么意思？</p></li><li><p>多态在程序中的体现？父类的引用或者接口的引用 实际指向的子类的对象. Father f = new Son1(). Father f = new Son2(),  Animal a = new Dog().   Animal b = new Cat()</p></li><li><p>多态情况下，向下转型指的是   将父类强行转成子类，例如   Animal a = new Dog();  Dog dog = (Dog) a;</p><p>因为已经事先知道a指向的 dog才可以向下转型，如果不知道需要使用关键字 instanceof 判断， if（ a instanceof Dog)  Dog d = (Dog) a.  如果a不是dog类型则会报错 </p></li><li><p>向下转型的好处是可以使用子类的特有方法，一般在多态的情况下  Father f = new Son(),这种 使用f调用方法的时候只能使用 Father类中定义的方法，在子类Son中定义的特有方法是无法调用到的，向下转型过以后才可以调用Son的特有方法。</p></li><li><p>在多态的情况下有一种特殊情况，如果Animal a = new Dog(). 如果父类和子类存在相同的成员变量的时候，JAVA在编译的时候都是看 等号左面即父类中该变量是否有语法错误，如果没有编译通过，当运行时（程序中使用该变量）那么依旧是检查等号左面的即父类中该变量使用是否正确。但是对于子父类中包含相同的方法（复写）的时候，java在编译的时候检查的是等号左面即父类中该方法是否语法正确，但是在运行的时候（程序调用该方法）是调用的等号右面即子类中的方法。如果不是子父类中相同的变量或者方法，统一编译运行全部是调用父类相关的变量和方法</p></li><li><p>内部类是什么？如何定义？内部类就是 类中类，在类中继续定义类。内部类的好处是什么？（不给外部其他类访问的权限） 内部类使用外部类的变量，方法的时候如何使用？外部类使用内部类的变量、方法的时候如何使用</p></li></ol><h5><a name='header-n189' class='md-header-anchor '></a>异常</h5><ol start='' ><li>异常的语法，如何捕获异常，如何抛出异常</li><li>关键字 throw 和 throws的区别</li><li>异常的分类（重要），编译时异常和运行时异常，两者的区别。Exception 和 RuntimeException</li><li>try-catch-finally </li><li>函数的两种结束方法，return、 throw XXXXException</li></ol><h5><a name='header-n206' class='md-header-anchor '></a>包(package)</h5><ol start='' ><li>如何定义包  package关键词</li><li>包的作用是:对类进行分类存储</li><li>类的全路径=包名+类名  <br/></li><li>百度下 public  protect default private 的权限总结</li><li>如果想使用不同的类的方法，需要导入包，关键字是 import 类全路径</li></ol><h5><a name='header-n223' class='md-header-anchor '></a>线程（重点）</h5><ol start='' ><li><p>java语言支持多线程。创建多线程的两种方法，extends Thread  实现其run()方法或者 implements Runnable 然后实现其run方法。需要自己百度下</p></li><li><p>启动线程的方法是   thread.start()</p></li><li><p>线程和进程的区别</p></li><li><p>一个线程存在多种状态，线程状态图   <a href='http://blog.csdn.net/huang_xw/article/details/7316354' target='_blank' >http://blog.csdn.net/huang_xw/article/details/7316354</a></p></li><li><p>线程安全的概念，导致线程不安全的原因 （多个线程操作一个共享的变量）</p></li><li><p>线程的好处（充分利用cpu，提高执行效率），坏处（线程不一定安全，导致编程复杂）</p><p>这里要重点看看  demo</p></li></ol><p></p><p></p><p></p><p></p><p></p><p></p><p></p></div>
+<div  id='write'  class = 'is-mac'><h3><a name='header-n526' class='md-header-anchor '></a>Java学习 part one</h3><p></p><h4><a name='header-n530' class='md-header-anchor '></a>java基础</h4><ol start='' ><li>java发展历史  （<a href='http://www.importnew.com/9060.html' target='_blank' >http://www.importnew.com/9060.html</a>   <a href='http://www.cnblogs.com/scwanglijun/p/3747607.html' target='_blank' >http://www.cnblogs.com/scwanglijun/p/3747607.html</a>）</li><li>JDK JRE区别</li><li>如何配置JAVA环境变量</li><li>java文件是如何运行的</li><li>java  javac命令的区别</li><li>什么是jar包，什么是war包</li></ol><h4><a name='header-n550' class='md-header-anchor '></a><del>java 常见的api使用（暂时别看，待完成）</del></h4><ol start='' ><li><del>jdk是官方的内置的api，一般我们大部分时间都是在使用内置的api，jdk文档1.6有中文，1.6以后就没有中文了</del></li><li><del>jdk文档地址，百度 【1.6 jdk 文档】，一般中文看不懂，可以在线看1.7或者1.8，1.9的英文在线文档。建议先下载1.6，看看如何看jdk文档，熟练了以后再看在线文档</del></li><li><del>String 类 ，字符串操作类，基本操作的api，建议所有的推荐了解的api都写demo自行测试</del></li></ol><h4><a name='header-n561' class='md-header-anchor '></a>java语法基础</h4><h5><a name='header-n562' class='md-header-anchor '></a>基本概念</h5><ol start='' ><li>java思想三大核心，抽象、继承、多态</li></ol><h5><a name='header-n567' class='md-header-anchor '></a>关键字</h5><ol start='' ><li>标识符，例如类的标识符是 class ，接口标识符  interface ,抽象类标识符 abstract class ,枚举标识符 enum ，静态类 static class</li><li>8种基本数据类型以及其包装类（基本数据类型和包装类的区别？？）</li><li>运算符号的区别           &amp; | ^ ! &amp;&amp; || ， 尤其在判断条件里 if(a &amp; b )和 if(a &amp;&amp; b)区别，类似的还有 if(a | b ) if(a || b)</li><li>位运算符  &lt;&lt; ，&gt;&gt;，&lt;&lt;&lt;，&gt;&gt;&gt;区别</li><li>特殊运算符 ++，  += ， —— ，-=  ，区分 i++   ++i的区别</li><li>java命名规范。驼峰式</li><li>三元运算符</li><li>数组定义的语法 ,三元数组的定义语法</li><li>Javadoc 生成java文档（了解）</li><li>do while和 while语法有什么区别</li><li>for循环的语法 foreach 和 for循环的语法区别（效果是一样的 都是遍历）</li><li>break，continue的使用  break a，continue a分别如何使用（for循环可以定义名称，使用break，continue 跳出制定的循环，默认只跳出一层循环）</li><li>重载和覆盖（复写）的区别 。 Overridge 和 overload</li><li>private关键字表示的含义（可以修饰 类，方法，变量，主要是控制 类，方法，变量的访问权限</li></ol><h5><a name='header-n611' class='md-header-anchor '></a>对象</h5><ol start='' ><li>什么叫对象，如何定义一个对象</li><li>什么是主函数(main)</li><li>什么是构造函数，默认构造函数，带参数构造函数，构造函数和一般函数的区别，构造函数的作用是什么</li><li>构造代码块和构造函数以及静态代码块写法以及区别以及执行顺序</li><li>new 对象这个动作在内存中到底做了什么，整个过程需要了解</li><li>匿名对象是什么？为什么存在匿名对象，如何定义匿名对象，如何使用匿名对象。</li><li>变量的作用范围，成员变量和局部变量的区别</li><li>jvm是什么 jvm内存结构是怎么分配的</li><li>封装的好处是什么</li><li>this关键字用法，代表的含义 </li><li>静态方法和非静态方法（成员方法）区别？是否可以相互调用？</li><li>静态变量和非静态变量区别</li><li>java常用的设计模式  单例（懒汉式，饿汉式）工厂，责任链，观察者 等等</li></ol><h5><a name='header-n652' class='md-header-anchor '></a>继承</h5><ol start='' ><li>java不支持多继承，只支持单继承，继承的关键字 extends，java支持多重继承（继承1个父类，父类再继承一个父类）</li><li>一个类继承另外一个类以后，父类的变量和方法，如何在子类中体现（跟private protect public 等关键字有关系，public和protect 的父类方法和变量，在子类中可以直接使用）</li><li>继承关系中，子父类包含相同的函数，变量的情况下，如果调用子类的变量，方法，会发生什么</li><li>继承关系中，子类调用父类方法如何调用  super.方法名</li><li>继承关系中，子父类构造函数，调用顺序是如何的。（子类的构造函数第一行全部有一个隐式的super.父类构造函数）</li><li>继承关系中 super(),this()分别什么意思</li><li>继承的好处 继承的弊端</li><li>继承的时候方法的复写，要求子父类中方法签名一模一样，方法签名包括方法名，参数列表，返回值类型，访问权限可以子类大于等于父类，在复写的时候，子类抛出的一场不可以大于父类</li><li>抽象类的特点和抽象类和一般类的区别</li><li>抽象类是否有 构造函数？抽象类是否可以继承？抽象类可以创建对象吗？什么是抽象方法，抽象类中可否没有抽象方法。</li><li>final  关键词放在 类，方法，变量上的区别</li><li>interface关键字是什么意思，用interface定义的称为 接口，接口中的方法都是空实现的，只定义方法名，不会有实现，可以理解interface是抽象类中全部是抽象方法的一种特殊抽象类。</li><li>类去实现接口 class  implements interface，实现接口的类必须实现接口中定义的所有方法。</li></ol><h5><a name='header-n693' class='md-header-anchor '></a>多态</h5><ol start='' ><li><p>多态是什么意思？</p></li><li><p>多态在程序中的体现？父类的引用或者接口的引用 实际指向的子类的对象. Father f = new Son1(). Father f = new Son2(),  Animal a = new Dog().   Animal b = new Cat()</p></li><li><p>多态情况下，向下转型指的是   将父类强行转成子类，例如   Animal a = new Dog();  Dog dog = (Dog) a;</p><p>因为已经事先知道a指向的 dog才可以向下转型，如果不知道需要使用关键字 instanceof 判断， if（ a instanceof Dog)  Dog d = (Dog) a.  如果a不是dog类型则会报错 </p></li><li><p>向下转型的好处是可以使用子类的特有方法，一般在多态的情况下  Father f = new Son(),这种 使用f调用方法的时候只能使用 Father类中定义的方法，在子类Son中定义的特有方法是无法调用到的，向下转型过以后才可以调用Son的特有方法。</p></li><li><p>在多态的情况下有一种特殊情况，如果Animal a = new Dog(). 如果父类和子类存在相同的成员变量的时候，JAVA在编译的时候都是看 等号左面即父类中该变量是否有语法错误，如果没有编译通过，当运行时（程序中使用该变量）那么依旧是检查等号左面的即父类中该变量使用是否正确。但是对于子父类中包含相同的方法（复写）的时候，java在编译的时候检查的是等号左面即父类中该方法是否语法正确，但是在运行的时候（程序调用该方法）是调用的等号右面即子类中的方法。如果不是子父类中相同的变量或者方法，统一编译运行全部是调用父类相关的变量和方法</p></li><li><p>内部类是什么？如何定义？内部类就是 类中类，在类中继续定义类。内部类的好处是什么？（不给外部其他类访问的权限） 内部类使用外部类的变量，方法的时候如何使用？外部类使用内部类的变量、方法的时候如何使用</p></li></ol><h5><a name='header-n715' class='md-header-anchor '></a>异常</h5><ol start='' ><li>异常的语法，如何捕获异常，如何抛出异常</li><li>关键字 throw 和 throws的区别</li><li>异常的分类（重要），编译时异常和运行时异常，两者的区别。Exception 和 RuntimeException</li><li>try-catch-finally </li><li>函数的两种结束方法，return、 throw XXXXException</li></ol><h5><a name='header-n732' class='md-header-anchor '></a>包(package)</h5><ol start='' ><li>如何定义包  package关键词</li><li>包的作用是:对类进行分类存储</li><li>类的全路径=包名+类名  <br/></li><li>百度下 public  protect default private 的权限总结</li><li>如果想使用不同的类的方法，需要导入包，关键字是 import 类全路径</li></ol><h5><a name='header-n749' class='md-header-anchor '></a>线程（重点）</h5><ol start='' ><li><p>java语言支持多线程。创建多线程的两种方法，extends Thread  实现其run()方法或者 implements Runnable 然后实现其run方法。需要自己百度下</p></li><li><p>启动线程的方法是   thread.start()</p></li><li><p>线程和进程的区别</p></li><li><p>一个线程存在多种状态，线程状态图   <a href='http://blog.csdn.net/huang_xw/article/details/7316354' target='_blank' >http://blog.csdn.net/huang_xw/article/details/7316354</a></p></li><li><p>线程安全的概念，导致线程不安全的原因 （多个线程操作一个共享的变量）</p></li><li><p>线程的好处（充分利用cpu，提高执行效率），坏处（线程不一定安全，导致编程复杂）</p><p>这里要重点看看  demo</p></li></ol><p></p><p></p><p></p><p></p><p></p><p></p><p></p></div>
 </body>
 </html>

@@ -1,0 +1,23 @@
+1、java发展历史
+        http://www.importnew.com/9060.html   http://www.cnblogs.com/scwanglijun/p/3747607.html
+2、JDK JRE区别
+        https://www.zhihu.com/question/20317448
+3、如何配置JAVA环境变量
+        https://www.zhihu.com/question/29114464/answer/153345290
+4、什么是jvm
+        Java Virtual Machine  java虚拟机，java代码都在运行在虚拟机上，java语言之所以是跨平台的就是因为语言运行在虚拟机上，而jvm是跨平台的。
+5、java文件是如何运行的
+        java程序的文件都是 .java结尾的，编译器会把java文件编译成.class结尾的文件，最后加载到jvm上运行（暂时这样理解)
+6、java  javac命令的区别（java常见命令)
+        在配置好环境变量后，终端中可以使用很多常用的命令
+        java ： 运行java程序   java  xxxx.class  即会运行该.java文件的主函数(main)函数
+        javac : 5中所说的把 .java文件编译成 .class文件   javac xxxx.java
+        javadoc: java文件中如果方法，类或者变量上按照 java自己的标准格式写了注释的话，使用javadoc命令可以生成该java文件的html文档（java自己的api文档就是这样生成的）
+                 常见注释格式  http://blog.csdn.net/growing_tree/article/details/38662361
+7、什么是jar包，什么是war包
+        jar包和war包都是java项目的打包形式，当然还有几种比如sar包等，常用的就是jar和war。简单理解就是都是jar包相当于类库（提供给别人使用），war包相当于一个大的项目的打包形式。
+        一般jar包是若干个java文件和别人的jar包的集合，war包是更多的jar包的集合。 https://www.zhihu.com/question/22129866
+
+8、tomcat是什么
+        web容器，貌似可以理解成uwsgi，简单说就是一个可以运行war包的小型服务器。一般我们把项目打包成war包，丢到tomcat的webapp目录下，启动tomcat，访问固定端口（可配置）即可访问该项目。
+        但是最近几年流行springboot，sb是内置了tomcat，所以不需要打包成war包再丢到外部的tomcat里面了，都是打成jar包直接使用内部的tomcat运行了。
