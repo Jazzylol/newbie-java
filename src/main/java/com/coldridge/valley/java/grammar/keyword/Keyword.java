@@ -1,6 +1,9 @@
-package com.coldridge.valley.java语法基础.关键字;
+package com.coldridge.valley.java.grammar.keyword;
 
-public class 关键字 {
+/**
+ * 关键字
+ */
+public class Keyword {
 
 
     /**
@@ -55,8 +58,8 @@ public class 关键字 {
     }
 
     /**
-     * java语言 可以看到所有测试的类 枚举 接口等都是定义在类 "关键字" 内部的，而只有这个类前面有个public关键字，
-     * java语言中规定 同一个.java文件（本例中的 关键字.java）可以定义N个 类，枚举，接口等，但是只能有一个带上public关键字，
+     * java语言 可以看到所有测试的类 枚举 接口等都是定义在类 "Keyword" 内部的，而只有这个类前面有个public关键字，
+     * java语言中规定 同一个.java文件（本例中的 Keyword.java）可以定义N个 类，枚举，接口等，但是只能有一个带上public关键字，
      * 同一个.java文件中其他类可以是private的，也可以是不写（不写就是默认关键字 default)，但是如果本类写了public关键字，那么类的名字就必须和文件名字（.java)相同
      *
      * 定义在类内部的类叫  内部类  ,如果是static的 就叫静态内部类。

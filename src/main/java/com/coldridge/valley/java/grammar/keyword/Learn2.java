@@ -1,10 +1,10 @@
-package com.coldridge.valley.java语法基础.关键字;
+package com.coldridge.valley.java.grammar.keyword;
 
 
 /**
  * 8种基本数据类型以及其包装类（基本数据类型和包装类的区别？？）
  */
-public class LearnTwo {
+public class Learn2 {
 
 
     /**

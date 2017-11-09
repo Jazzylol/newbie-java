@@ -1,4 +1,4 @@
-package com.coldridge.valley.java语法基础.关键字;
+package com.coldridge.valley.java.grammar.keyword;
 
 
 /**
@@ -6,7 +6,7 @@ package com.coldridge.valley.java语法基础.关键字;
  *
  * && || ， 尤其在判断条件里 if(a & b )和 if(a && b)区别，类似的还有 if(a | b ) if(a || b)
  */
-public class LearnThree {
+public class Learn3 {
 
 
     public static void main(String[] args) {
